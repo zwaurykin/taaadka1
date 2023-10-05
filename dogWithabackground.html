@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Mountains and Camel</title>
+  <style>
+    canvas {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="mountainsCanvas" width="400" height="300"></canvas>
+
+  <script>
+    // Get the canvas element
+    const canvas = document.getElementById('mountainsCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Draw the sky
+    ctx.fillStyle = '#87CEEB'; // Sky color
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Draw the mountains
+    ctx.fillStyle = '#A9A9A9'; // Mountain color
+    ctx.beginPath();
+    ctx.moveTo(50, 200);
+    ctx.lineTo(150, 50);
+    ctx.lineTo(250, 200);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(150, 200);
+    ctx.lineTo(250, 50);
+    ctx.lineTo(350, 200);
+    ctx.closePath();
+    ctx.fill();
+
+    // Draw the ground
+    ctx.fillStyle = '#8B4513'; // Ground color
+    ctx.fillRect(0, 200, canvas.width, canvas.height);
+
+    // Draw the camel body
+    ctx.fillStyle = '#D2B48C'; // Camel body color
+    ctx.beginPath();
+    ctx.arc(200, 180, 30, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Draw the camel head
+    ctx.fillStyle = '#D2B48C'; // Camel head color
+    ctx.beginPath();
+    ctx.arc(160, 180, 20, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Draw the camel legs
+    ctx.fillStyle = '#8B4513'; // Camel legs color
+    ctx.fillRect(185, 200, 10, 30);
+    ctx.fillRect(205, 200, 10, 30);
+
+    // Draw the camel hump
+    ctx.fillStyle = '#D2B48C'; // Camel hump color
+    ctx.beginPath();
+    ctx.arc(200, 160, 15, 0, Math.PI * 2);
+    ctx.fill();
+  </script>
+</body>
+</html>
