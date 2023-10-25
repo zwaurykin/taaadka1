@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    color: #959595;
+    color: #786686;
     font: normal 15px/2.0em Sans-Serif;
 }
 
@@ -22,7 +22,7 @@ h6 {
 }
 
 #page {
-    background: #fff;
+    background: #f5e1fb;
 }
 
 
@@ -68,7 +68,7 @@ h1 a:hover {
 
 /* Feature */
 .feature {
-    background:rgb(100, 215, 226);
+    background:rgb(107, 47, 166);
     padding: 18px;
 }
 

@@ -3,13 +3,9 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="index.css">
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <div style="text-align: center;">
-  <img src="images/images/logo.png" width="300" height="200" alt="Image" class="sideways-image">
-</div>
     <title>Mobilo</title>
+    <link rel="stylesheet" href="index.css">
 
 
 </head>
@@ -38,7 +34,8 @@
         </header>
         <div class="feature">
             <div class="feature-inner">
-                <h1>Contact us</h1>
+                <h1>Users
+                </h1>
             </div>
         </div>
 
@@ -48,16 +45,31 @@
 
                 <main id="contentbar">
                     <div class="article">
-                        <?php
-                            $lines = file('contacts.txt');
-                            $count = 0;
-                            foreach($lines as $line) {
-                                $count += 1;
-                                echo str_pad($count, 2, 0, STR_PAD_LEFT).". ".$line;
-                                echo "<br>";
+                        <?php require "dbconnect.php"; ?><?php
+                            extract($_POST);
 
-                            }
-                        ?>
+                            // Create connection
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+
+                            // Check connection
+                            
+                            if ($conn->connect_error) {
+                                die("Connection failed: " . $conn->connect_error);
+                              }
+
+                            $sql = "INSERT INTO user VALUES ('$fname', '$lname','$email', '$haddress', '$hphone', '$cphone')";
+                            
+
+                            
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+
+                            $conn->close();
+                            ?>
+                        <!--end log form -->
                     </div>
                 </main>
 
@@ -79,6 +91,15 @@
         </div>
 
        
+        </div>
+        <footer id="footer">
+            <div id="footer-inner">
+                <p>&copy; Copyright  <a href="#">Mobilo</a> &#124; <a href="#">Terms of Use</a> &#124; <a
+                        href="#">Privacy Policy</a> &#124; made with ♥️ </p>
+                <div class="clr"></div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

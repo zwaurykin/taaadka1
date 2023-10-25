@@ -68,7 +68,7 @@ h1 a:hover {
 
 /* Feature */
 .feature {
-    background:rgb(100, 215, 226);
+    background:rgb(185, 161, 206);
     padding: 18px;
 }
 
@@ -113,7 +113,7 @@ h1 a:hover {
 
 #top-nav ul li.active a,
 #top-nav ul li a:hover {
-    color: #8ecfcc;
+    color: #b28ecf;
 }
 
 /* Content */
@@ -178,7 +178,7 @@ h1 a:hover {
 }
 
 #content #sidebar .widget ul li a:hover {
-    color: #89cbc8;
+    color: #9889cb;
     font-weight: bold;
     text-decoration: none;
 }

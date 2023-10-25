@@ -1,5 +1,5 @@
 <?php
-                    $cookie_name = "last_5_pages_mobito";
+                    $cookie_name = "last_5_pages_Mobilo";
                     $cookie_expiration = time() + (86400 * 30); // 30 days
                     
                     // Get the current page URL
@@ -64,7 +64,7 @@ $reviews = $conn->query($sql);
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Mobito</title>
+    <title>Mobilo</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="products.css">
 
@@ -76,18 +76,18 @@ $reviews = $conn->query($sql);
         <header id="header">
             <div id="header-inner">
                 <div id="logo">
-                    <h1><a href="#">Mobito</a></h1>
+                    <h1><a href="#">Mobilo</a></h1>
                 </div>
                 <div id="top-nav">
                     <ul>
-                    <li><a href="/marketplace/mobitos/index.html">Home</a></li>
-                        <li><a href="/marketplace/mobitos/about.html">About</a></li>
-                        <li><a href="/marketplace/mobitos/products.html">Products/Services</a></li>
-                        <li><a href="/marketplace/mobitos/news.html">News</a></li>
-                        <li><a href="/marketplace/mobitos/contacts.php">Contact</a></li>
-                        <li><a href="/marketplace/mobitos/users.html">Users</a></li>
-                        <li><a href="/marketplace/mobitos/admin.html">Admin</a></li>
-                        <li><a href="/marketplace/mobitos/curl.php">CURL</a></li>
+                    <li><a href="/marketplace/Mobilos/index.html">Home</a></li>
+                        <li><a href="/marketplace/Mobilos/about.html">About</a></li>
+                        <li><a href="/marketplace/Mobilos/products.html">Products/Services</a></li>
+                        <li><a href="/marketplace/Mobilos/news.html">News</a></li>
+                        <li><a href="/marketplace/Mobilos/contacts.php">Contact</a></li>
+                        <li><a href="/marketplace/Mobilos/users.html">Users</a></li>
+                        <li><a href="/marketplace/Mobilos/admin.html">Admin</a></li>
+                        <li><a href="/marketplace/Mobilos/curl.php">CURL</a></li>
 
                     </ul>
                 </div>
@@ -109,7 +109,7 @@ $reviews = $conn->query($sql);
                     <div class="article">
                    
                         <div class="card">
-                            <img src="/MOBITOS/images/images/5.png" alt="Denim Jeans" style="max-height:450px; max-width:450px;">
+                            <img src="/MobiloS/images/images/5.png" alt="Denim Jeans" style="max-height:450px; max-width:450px;">
                             <h1>Moto G 5G</h1>
                             <p class="price">$400</p>
                             <p> he Moto G 5G features a 6.7-inch IPS LCD display with a resolution of 1080 x 2400 pixels. The screen offers good color reproduction and sharpness.</p>

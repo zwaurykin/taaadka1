@@ -3,13 +3,11 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="index.css">
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <div style="text-align: center;">
-  <img src="images/images/logo.png" width="300" height="200" alt="Image" class="sideways-image">
-</div>
-    <title>Mobilo</title>
+    <link rel="stylesheet" href="index.css">
+    <div style="text-align: center;">   
+    <img src="images/images/logo.png" width="300" height="200" alt="Image"> 
+    </div>
 
 
 </head>
@@ -19,7 +17,7 @@
         <header id="header">
             <div id="header-inner">
                 <div id="logo">
-                    <h1><a href="#">Mobilo</a></h1>
+                    <h1><a href="#"> Mobilo <span></span></a></h1>
                 </div>
                 <div id="top-nav">
                     <ul>
@@ -38,7 +36,7 @@
         </header>
         <div class="feature">
             <div class="feature-inner">
-                <h1>Contact us</h1>
+                <h1>Admin</h1>
             </div>
         </div>
 
@@ -48,16 +46,16 @@
 
                 <main id="contentbar">
                     <div class="article">
-                        <?php
-                            $lines = file('contacts.txt');
-                            $count = 0;
-                            foreach($lines as $line) {
-                                $count += 1;
-                                echo str_pad($count, 2, 0, STR_PAD_LEFT).". ".$line;
-                                echo "<br>";
-
-                            }
-                        ?>
+                        <div class="log-form">
+                            <h2>Login to your account</h2>
+                            **Use admin:admin
+                            <form action="admin.php" method="post">
+                                <input type="text" name="username" title="username" placeholder="username" />
+                                <input type="password" name="password" title="username" placeholder="password" />
+                                <button type="submit" class="btn">Login</button>
+                            </form>
+                        </div>
+                        <!--end log form -->
                     </div>
                 </main>
 
@@ -78,7 +76,15 @@
             </div>
         </div>
 
-       
+        
+        <footer id="footer">
+            <div id="footer-inner">
+                <p>&copy; Copyright  <a href="#">Mobilo</a> &#124; <a href="#">Terms of Use</a> &#124; <a
+                        href="#">Privacy Policy</a> &#124; made with ♥️ </p>
+                <div class="clr"></div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
