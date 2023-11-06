@@ -95,7 +95,7 @@
                     <div class="article">
                     
                          <div class="card">
-                            <img src="images/images/3.png" alt="product" style="max-height:450px; max-width:450px;">
+                            <img src="../images/images/3.png" alt="product" style="max-height:450px; max-width:450px;">
                             <h1>RedMi Note 4</h1>
                             <p class="price">$300.99</p>
                             <p>Best phone in your budget</p>

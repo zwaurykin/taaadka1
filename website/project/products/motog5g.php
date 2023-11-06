@@ -96,7 +96,7 @@
                     <div class="article">
                    
                         <div class="card">
-                            <img src="images/images/5.png" alt="product" style="max-height:450px; max-width:450px;">
+                            <img src="../images/images/5.png" alt="product" style="max-height:450px; max-width:450px;">
                             <h1>Moto G 5G</h1>
                             <p class="price">$400</p>
                             <p> he Moto G 5G features a 6.7-inch IPS LCD display with a resolution of 1080 x 2400 pixels. The screen offers good color reproduction and sharpness.</p>

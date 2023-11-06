@@ -94,7 +94,7 @@
                     <div class="article">
                     
                         <div class="card">
-                            <img src="images/images/about.png" alt="product" style="max-height:450px; max-width:450px;">
+                            <img src="../images/images/about.png" alt="product" style="max-height:450px; max-width:450px;">
                             <h1>Iphone X</h1>
                             <p class="price">$400</p>
                             <p> Iphone X available at 50% discount</p>

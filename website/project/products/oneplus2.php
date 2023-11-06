@@ -95,7 +95,7 @@
                     <div class="article">
                    
                          <div class="card">
-                            <img src="images/images/2.png" alt="product" style="max-height:450px; max-width:450px;">
+                            <img src="../images/images/2.png" alt="product" style="max-height:450px; max-width:450px;">
                             <h1>One Plus 2</h1>
                             <p class="price">$140</p>
                             <p>Display: The OnePlus 2 features a 5.5-inch IPS LCD display with a resolution of 1080 x 1920 pixels, providing a sharp and vibrant visual experience.</p>

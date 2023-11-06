@@ -93,7 +93,7 @@
                     <div class="article">
                     
                         <div class="card">
-                            <img src="images/images/4.png" alt="product" style="max-height:450px; max-width:450px;">
+                            <img src="../images/images/4.png" alt="product" style="max-height:450px; max-width:450px;">
                             <h1>Iphone 14 pro max</h1>
                             <p class="price">$1200</p>
                             <p> The iPhone 14 pro maxfollows a similar design language as its predecessor, with a glass front and back and an aluminum or stainless steel frame. It is available in various colors..</p>
