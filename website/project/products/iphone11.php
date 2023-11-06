@@ -80,14 +80,14 @@ $reviews = $conn->query($sql);
                 </div>
                 <div id="top-nav">
                     <ul>
-                    <li><a href="/index.html">Home</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/products.html">Products/Services</a></li>
-                        <li><a href="/news.html">News</a></li>
-                        <li><a href="/contacts.php">Contact</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../products.html">Products/Services</a></li>
+                        <li><a href="../news.html">News</a></li>
+                        <li><a href="../contacts.php">Contact</a></li>
                         <!-- <li><a href="/users.html">Users</a></li> -->
-                        <li><a href="/admin.html">Admin</a></li>
-                        <li><a href="/curl.php">CURL</a></li>
+                        <li><a href="../admin.html">Admin</a></li>
+                        <li><a href="../curl.php">CURL</a></li>
 
                     </ul>
                 </div>
