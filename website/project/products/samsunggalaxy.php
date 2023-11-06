@@ -100,7 +100,7 @@
                     <div class="article">
                     
                         <div class="card">
-                            <img src="images/images/1.png" alt="product" style="max-height:450px; max-width:450px;">
+                            <img src="../images/images/1.png" alt="product" style="max-height:450px; max-width:450px;">
                             <h1>Samsung Galaxy</h1>
                             <p classq="price">$120.22</p>
                             <p> vibrant and high-resolution displays, often utilizing Samsung's Super AMOLED technology, providing sharp visuals, vivid colors, and excellent contrast.</p>
