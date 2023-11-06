@@ -107,7 +107,7 @@ $reviews = $conn->query($sql);
                     <div class="article">
                     
                       <div class="card">
-                            <img src="/images/images/banner1.png" alt="Denim Jeans" style="max-height:450px; max-width:450px;">
+                            <img src="images/images/banner1.png" alt="product" style="max-height:450px; max-width:450px;">
                             <h1>Google pixel 6A</h1>
                             <p class="price">$300</p>
                             <p> Pixel 6A available at 50% discount</p>

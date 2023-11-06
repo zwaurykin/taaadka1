@@ -108,7 +108,7 @@ $reviews = $conn->query($sql);
                     <div class="article">
                    
                       <div class="card">
-                            <img src="/images/images/6.png" alt="Denim Jeans" style="max-height:450px; max-width:450px;">
+                            <img src="images/images/6.png" alt="product" style="max-height:450px; max-width:450px;">
                             <h1>Google pixel 7 </h1>
                             <p class="price">$999.99</p>
                             <p>Google Pixel phones run on stock Android, which means they offer a clean and unmodified version of the operating system, without any manufacturer-specific customizations. </p>

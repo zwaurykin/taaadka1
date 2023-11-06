@@ -94,7 +94,7 @@
                     <div class="article">
                     
                        <div class="card">
-                            <img src="/images/images/2.png" alt="Denim Jeans" style="max-height:450px; max-width:450px;">
+                            <img src="images/images/2.png" alt="product" style="max-height:450px; max-width:450px;">
                             <h1>Samsung E1</h1>
                             <p class="price">$100.00</p>
                             <p>old model in very low price</p>
