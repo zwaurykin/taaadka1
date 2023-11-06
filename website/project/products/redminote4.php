@@ -44,20 +44,7 @@
                     setcookie($cookie_name, $cookie_value, $cookie_expiration, "/");
                     ?>
 
-<?php require "dbconnect.php"; ?><?php
-$productId = basename($_SERVER['PHP_SELF'], '.php');
 
-//Fetch Reviews
-$sql = "SELECT * FROM reviews WHERE productId = '$productId'";
-$reviews = $conn->query($sql);
-?>
-<?php require "dbconnect.php"; ?><?php
-$productId = basename($_SERVER['PHP_SELF'], '.php');
-
-//Fetch Reviews
-$sql = "SELECT * FROM reviews WHERE productId = '$productId'";
-$reviews = $conn->query($sql);
-?>
 <!DOCTYPE html>
 <!-- Template by html.am -->
 <html>
@@ -80,14 +67,14 @@ $reviews = $conn->query($sql);
                 </div>
                 <div id="top-nav">
                     <ul>
-                    <li><a href="/marketplace/Mobilos/index.html">Home</a></li>
-                        <li><a href="/marketplace/Mobilos/about.html">About</a></li>
-                        <li><a href="/marketplace/Mobilos/products.html">Products/Services</a></li>
-                        <li><a href="/marketplace/Mobilos/news.html">News</a></li>
-                        <li><a href="/marketplace/Mobilos/contacts.php">Contact</a></li>
-                        <li><a href="/marketplace/Mobilos/users.html">Users</a></li>
-                        <li><a href="/marketplace/Mobilos/admin.html">Admin</a></li>
-                        <li><a href="/marketplace/Mobilos/curl.php">CURL</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/products.html">Products/Services</a></li>
+                        <li><a href="/news.html">News</a></li>
+                        <li><a href="/contacts.php">Contact</a></li>
+                        <!-- <li><a href="/users.html">Users</a></li> -->
+                        <li><a href="/admin.html">Admin</a></li>
+                        <!-- <li><a href="/curl.php">CURL</a></li> -->
 
                     </ul>
                 </div>
@@ -108,7 +95,7 @@ $reviews = $conn->query($sql);
                     <div class="article">
                     
                          <div class="card">
-                            <img src="/MobiloS/images/images/3.png" alt="Denim Jeans" style="max-height:450px; max-width:450px;">
+                            <img src="/images/images/3.png" alt="Denim Jeans" style="max-height:450px; max-width:450px;">
                             <h1>RedMi Note 4</h1>
                             <p class="price">$300.99</p>
                             <p>Best phone in your budget</p>

@@ -80,14 +80,14 @@ $reviews = $conn->query($sql);
                 </div>
                 <div id="top-nav">
                     <ul>
-                    <li><a href="/marketplace/Mobilos/index.html">Home</a></li>
-                        <li><a href="/marketplace/Mobilos/about.html">About</a></li>
-                        <li><a href="/marketplace/Mobilos/products.html">Products/Services</a></li>
-                        <li><a href="/marketplace/Mobilos/news.html">News</a></li>
-                        <li><a href="/marketplace/Mobilos/contacts.php">Contact</a></li>
-                        <li><a href="/marketplace/Mobilos/users.html">Users</a></li>
-                        <li><a href="/marketplace/Mobilos/admin.html">Admin</a></li>
-                        <li><a href="/marketplace/Mobilos/curl.php">CURL</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/products.html">Products/Services</a></li>
+                        <li><a href="/news.html">News</a></li>
+                        <li><a href="/contacts.php">Contact</a></li>
+                        <!-- <li><a href="/users.html">Users</a></li> -->
+                        <li><a href="/admin.html">Admin</a></li>
+                        <!-- <li><a href="/curl.php">CURL</a></li> -->
 
                     </ul>
                 </div>
@@ -108,7 +108,7 @@ $reviews = $conn->query($sql);
                     <div class="article">
                    
                       <div class="card">
-                            <img src="/MobiloS/images/images/6.png" alt="Denim Jeans" style="max-height:450px; max-width:450px;">
+                            <img src="/images/images/6.png" alt="Denim Jeans" style="max-height:450px; max-width:450px;">
                             <h1>Google pixel 7 </h1>
                             <p class="price">$999.99</p>
                             <p>Google Pixel phones run on stock Android, which means they offer a clean and unmodified version of the operating system, without any manufacturer-specific customizations. </p>
