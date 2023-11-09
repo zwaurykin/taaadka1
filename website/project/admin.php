@@ -25,6 +25,7 @@
                         <li><a href="news.html">News</a></li>
                         <li><a href="contacts.php">Contact</a></li>
                         <li><a href="admin.html">Admin</a></li>
+                        <li><a href="curl.php">CURL</a></li>
 
                     </ul>
                 </div>
