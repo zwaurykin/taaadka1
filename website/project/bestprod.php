@@ -46,7 +46,7 @@
                             echo "<br/><a href=" . $url . $row["shop"] . "/products/" . $row["id"] . ".php" . ">" . ucfirst($row["id"]) . " from " . ucfirst($row['shop']) . "</a>";
 
 
-                            // "<br><a href='$product_id'>$product_id</a> ";
+                            "<br><a href='$product_id'>$product_id</a> ";
                         }
 
                         ?>
