@@ -44,32 +44,37 @@
 
                 <main id="contentbar">
                     <div class="article">
-                        <?php require "dbconnect.php"; ?><?php
+                        <?php
 
-                            extract($_POST);
+                        error_reporting(E_ALL);
+                        ini_set('display_errors', '1');
 
-                            // Create connection
-                            $conn = new mysqli($servername, $username, $password, $dbname, 3306);
+                        require "dbconnect.php"; ?><?php
 
-                            // Check connection
-                            
-                            if ($conn->connect_error) {
-                                die("Connection failed: " . $conn->connect_error);
-                              }
+                                                        extract($_POST);
 
-                              $sql = "SELECT * FROM user where email='$email'";
-                              $result = $conn->query($sql);
-                              
-                              if ($result->num_rows > 0) {
-                                // output data of each row
-                                while($row = $result->fetch_assoc()) {
-                                    echo "Email: " . $row["email"]. " - Name: " . $row["fname"]. " " . $row["lname"]. "<br>";
-                                }
-                              } else {
-                                echo "0 results";
-                              }
-                              $conn->close();
-                            ?>
+                                                        // Create connection
+                                                        // $conn = new mysqli($servername, $username, $password, $dbname, 3306);
+
+                                                        // Check connection
+
+                                                        if ($conn->connect_error) {
+                                                            die("Connection failed: " . $conn->connect_error);
+                                                        }
+
+                                                        $sql = "SELECT * FROM user where email='$email'";
+                                                        $result = $conn->query($sql);
+
+                                                        if ($result->num_rows > 0) {
+                                                            // output data of each row
+                                                            while ($row = $result->fetch_assoc()) {
+                                                                echo "Email: " . $row["email"] . " - Name: " . $row["fname"] . " " . $row["lname"] . "<br>";
+                                                            }
+                                                        } else {
+                                                            echo "0 results";
+                                                        }
+                                                        $conn->close();
+                                                        ?>
                         <!--end log form -->
                     </div>
                 </main>
@@ -124,8 +129,7 @@
         </div>
         <footer id="footer">
             <div id="footer-inner">
-                <p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a
-                        href="#">Privacy Policy</a></p>
+                <p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a></p>
                 <div class="clr"></div>
             </div>
         </footer>

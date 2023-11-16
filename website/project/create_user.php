@@ -45,30 +45,33 @@
 
                 <main id="contentbar">
                     <div class="article">
-                        <?php require "dbconnect.php"; ?><?php
-                            extract($_POST);
+                        <?php
+                        error_reporting(E_ALL);
+                        ini_set('display_errors', '1');
+                        require "dbconnect.php"; ?><?php
+                                                    extract($_POST);
 
-                            // Create connection
-                            $conn = new mysqli($servername, $username, $password, $dbname);
+                                                    // Create connection
+                                                    // $conn = new mysqli($servername, $username, $password, $dbname);
 
-                            // Check connection
-                            
-                            if ($conn->connect_error) {
-                                die("Connection failed: " . $conn->connect_error);
-                              }
+                                                    // Check connection
 
-                            $sql = "INSERT INTO user VALUES ('$fname', '$lname','$email', '$haddress', '$hphone', '$cphone')";
-                            
+                                                    if ($conn->connect_error) {
+                                                        die("Connection failed: " . $conn->connect_error);
+                                                    }
 
-                            
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-  } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
+                                                    $sql = "INSERT INTO user VALUES ('$fname', '$lname','$email', '$haddress', '$hphone', '$cphone')";
 
-                            $conn->close();
-                            ?>
+
+
+                                                    if (mysqli_query($conn, $sql)) {
+                                                        echo "New record created successfully";
+                                                    } else {
+                                                        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                                                    }
+
+                                                    $conn->close();
+                                                    ?>
                         <!--end log form -->
                     </div>
                 </main>
@@ -90,15 +93,14 @@ if (mysqli_query($conn, $sql)) {
             </div>
         </div>
 
-       
+
+    </div>
+    <footer id="footer">
+        <div id="footer-inner">
+            <p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a></p>
+            <div class="clr"></div>
         </div>
-        <footer id="footer">
-            <div id="footer-inner">
-                <p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a
-                        href="#">Privacy Policy</a></p>
-                <div class="clr"></div>
-            </div>
-        </footer>
+    </footer>
     </div>
 </body>
 
