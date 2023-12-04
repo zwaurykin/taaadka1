@@ -106,7 +106,7 @@
                             <p> vibrant and high-resolution displays, often utilizing Samsung's Super AMOLED technology, providing sharp visuals, vivid colors, and excellent contrast.</p>
                           </div>
                     </div>
-        <form class="form-signin" method="post" action="/marketplace/petshop/addReview.php">
+        <form class="form-signin" method="post" action="../addReview.php">
                         <h1 class="h3 mb-3 font-weight-normal">Add Review</h1>
                         <label for="rating">Select a Rating (1-5)</label>
                         <select name="rating" class="form-control" id="rating">
